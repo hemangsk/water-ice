@@ -1,0 +1,177 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@font-face {
+  font-family: "Futura Std Medium";
+  src: url("//d2xzbo2ehns0vv.cloudfront.net/media/wysiwyg/futura-fonts/FuturaStd-Medium.woff") format("woff"), url("//d2xzbo2ehns0vv.cloudfront.net/media/wysiwyg/futura-fonts/FuturaStd-Medium.otf") format("otf"), url("//d2xzbo2ehns0vv.cloudfront.net/media/wysiwyg/futura-fonts/FuturaStd-Medium.eot") format("eot"), url("//d2xzbo2ehns0vv.cloudfront.net/media/wysiwyg/futura-fonts/FuturaStd-Medium.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Futura Std Book";
+  src: url("//d2xzbo2ehns0vv.cloudfront.net/media/wysiwyg/futura-fonts/FuturaStd-Medium.woff") format("woff"), url("//d2xzbo2ehns0vv.cloudfront.net/media/wysiwyg/futura-fonts/FuturaStd-Medium.otf") format("otf"), url("//d2xzbo2ehns0vv.cloudfront.net/media/wysiwyg/futura-fonts/FuturaStd-Medium.eot") format("eot"), url("//d2xzbo2ehns0vv.cloudfront.net/media/wysiwyg/futura-fonts/FuturaStd-Medium.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Futura Std Bold";
+  src: url("//d2xzbo2ehns0vv.cloudfront.net/media/wysiwyg/futura-fonts/FuturaStd-Heavy.woff") format("woff"), url("//d2xzbo2ehns0vv.cloudfront.net/media/wysiwyg/futura-fonts/FuturaStd-Heavy.otf") format("otf"), url("//d2xzbo2ehns0vv.cloudfront.net/media/wysiwyg/futura-fonts/FuturaStd-Heavy.eot") format("eot"), url("//d2xzbo2ehns0vv.cloudfront.net/media/wysiwyg/futura-fonts/FuturaStd-Heavy.ttf") format("ttf");
+}
+
+
+// Our variables
+$base-font-family: "Futura Std Medium", Helvetica, Arial, sans-serif;
+$font-family: "Gilda Display";
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+
+
+.left-sidebar{
+position: fixed;
+height: 100%;
+text-align: justify;
+}
+
+.right-sidebar{
+  margin-left: 45%;
+  font-family: $font-family;
+  font-size: 22px;
+  text-align: justify;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+.site-description{
+  font-family: $base-font-family;
+text-transform: uppercase;
+letter-spacing: 0.7px;
+font-size: 12px;
+padding-bottom: 10em;
+}
+
+.footer{
+  font-family: $base-font-family;
+text-transform: uppercase;
+letter-spacing: 0.7px;
+font-size: 12px;
+}
+.site-title{
+  font-family: $base-font-family;
+text-transform: uppercase;
+letter-spacing: 0.2em;
+font-size: 45px;
+padding-top: 1.5em;
+padding-bottom: 0.5em;
+}
+
+.content-left{
+  font-family: "Gilda Display";
+  padding-bottom: 5em;
+  font-size: 18px;
+}
+
+.powered{
+  text-align: right;
+}
+
+.post-list{
+  text-align: center;
+}
+
+.post-box{
+  padding: 1em;
+}
+
+.post-title{
+  font-family: "Futura Std Medium";
+text-transform: uppercase;
+font-size: 16px;
+letter-spacing: 0.2em;
+text-indent: 0.8em;
+
+}
+.post-excerpt{
+  font-size: 18px;
+padding-top: 1em;
+padding-bottom: 1em;
+}
+
+.posted{
+  font-family: "Futura Std Medium";
+text-transform: uppercase;
+font-size: 12px;
+letter-spacing: 0.2em;
+text-indent: 0.8em;
+}
+a{
+  color: #283593;
+}
+a:hover{
+  color: midnightblue;
+  text-decoration: none;
+  border-bottom: 1px dotted black;
+}
+
+.post-title-main{
+  font-family: "Futura Std Medium";
+letter-spacing: 3px;
+text-align: center;
+text-indent: 12px;
+font-size: 40px;
+}
+.post-meta-main{
+  text-align: center;
+padding: 1em;
+}
+.author{
+  font-family: "Futura Std Medium";
+font-size: 16px;
+letter-spacing: 0.2em;
+text-align: center;
+padding-bottom: 4em;
+
+}
+.author-name{
+  text-transform: uppercase;
+}
+.nochange{
+  color: black !important;
+}
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "syntax-highlighting"
+;
