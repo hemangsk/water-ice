@@ -9,7 +9,7 @@
 title: WATER & ICE
 email: your-email@domain.com
 description: Fixed Stuff Redefined.
-baseurl: "/water-ice" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://hemangsk.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
