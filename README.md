@@ -1,5 +1,3 @@
-#WATER & ICE
-
 <p align="center">
   <img src="https://farm8.staticflickr.com/7395/26954376195_3c46ba9f5f_o.png?raw=true" alt="Sublime's custom image"/>
 
